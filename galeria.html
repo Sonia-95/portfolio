@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Sônia - Portfólio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+    <link rel='stylesheet' type='text/css' href='css/style.css'>
+
+
+</head>
+
+<body>
+    <div id="container">
+
+        <header>
+            <!-- Início do cabecalho -->
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sobre.html">Sobre</a></li>
+                    <li><a href="galeria.html">Galeria de Fotos</a></li>
+                    <li><a href="contato.html">Contato</a></li>
+                </ul>
+            </nav>
+
+        </header> <!-- Fim do cabecalho -->
+        <!-- -------------------------------------------- -->
+      
+        <div id="galeriaTitulo">
+            <h3>Galeria de Fotos</h3>
+        </div>  
+
+        <section class="galeria">
+
+                <img src="img/img-1-grande.jpeg" alt="IENIT" onclick="mostrarImagem(this)">
+                <img src="img/init1.jpeg" alt="IENIT" onclick="mostrarImagem(this)">
+                <img src="img/init3.jpeg" alt="IENIT" onclick="mostrarImagem(this)"> 
+                <img src="img/TI.jpeg" alt="TI for Girl" onclick="mostrarImagem(this)">
+                <img src="img/TI2.jpeg" alt="TI for Girl" onclick="mostrarImagem(this)">
+                <img src="img/tcc1.jpeg" alt="TCC" onclick="mostrarImagem(this)">
+                <img src="img/tcc2.jpeg" alt="TCC" onclick="mostrarImagem(this)">
+                <img src="img/tcc3.jpeg" alt="TCC" onclick="mostrarImagem(this)">           
+
+        </section>
+        
+        <section class="apresentacao">
+            <span onclick="this.parentElement.style.display= 'none'" class="btFechar">&times;</span>
+            <img id="imagemGrande">
+        </section>
+
+<!-- ------------------------ -->
+        <footer>
+            <p>
+                <a href="index.html">Home</a>
+                <a href="sobre.html">Sobre</a>
+                <a href="galeria.html">Galeria de Fotos</a>
+                <a href="contato.html">Contato</a>
+            </p>
+            <p>
+                2022 - Desenvolvedora Front-end - Sônia Oliveira.
+            </p>
+
+        </footer><!-- Fim do rodapé -->
+    </div><!-- Fim da div Principal  -->
+    </div><!-- Fim do Container -->
+
+    <script type="text/javascript" src="js/script.js"></script>
+</body>
+</html>

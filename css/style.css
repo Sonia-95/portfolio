@@ -1,0 +1,302 @@
+/* ------ ESTRUTURA DO SITE ----- */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f4f2ec url(../img/capa1.png) repeat-x;
+    font: 14px "Lucida Grande", "Lucida Sans Unicode", "Arial", sans-serif;
+}
+
+#container {
+    max-width: 1080px;/* tamanho maximo na tela */
+    min-width: 320px;/* tamanho minimo na tela */
+    margin: 0 auto;
+}
+
+/* ---------------------------------------- */
+/* ---- BARRA DE NAVEGAÇÃO - CABEÇALHO ----- */
+
+header nav ul {
+    display: flex;
+    flex-direction: row;/* padrão em formato de linha */
+    justify-content: flex-end;
+    padding: 30px;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 40px;
+}
+
+nav ul li a {
+    margin: 10px;
+    text-transform: uppercase;
+   /*  color: #af670a; */
+}
+
+
+nav ul li a:hover {
+    border-bottom: 1px solid #535858;/* borda do menu*/
+}
+
+/*
+TODOS OS LINKS FICARÃO:
+link: Links não visitados 
+active: Links ativos
+visited: Links visitados
+*/
+a:link, a:active, a:visited {
+    color: #af670a;
+    text-decoration: none; 
+}
+
+a:hover {
+    color: #227115;
+}
+
+/* ---------------------------------------- */
+/* ---- CONTEUDO- SECÕES ----- */
+
+#conteudo {
+   /*  border: 1px solid #af670a; */
+    max-width: 710px;
+    margin-bottom: 30px;
+    float: left;/* informar que vai ficar na esquerda */
+
+}
+
+#capa img {
+    width: 100%;/* a imagem vai ficar tamanho da div */
+    height: 320px;
+}
+
+article#exposicao ul li{
+    list-style: none;
+
+}
+
+
+
+/* ---------------------------------------- */
+/* ---- ASIDE- SECÕES ----- */
+
+aside {
+   float: right;
+   width: 350px;
+   background: #ebe7dd;
+   padding-bottom: 30px;
+   margin-bottom: 30px;
+}
+
+ section#contato{
+    background: #cdc8b1;
+    height: 100px;
+    padding: 10px 27px 27px 27px;
+} 
+section#contato a{
+   padding: 10px; 
+   margin-left: 20px;
+} 
+
+section#galeria{
+    padding: 10px 27px 27px 27px;
+}
+
+section#galeria a {
+    display: block;
+    background: url(../img/fundo-foto.png) no-repeat;
+    padding: 17px 15px 17px 15px;
+    float: left;
+    margin: 10px 0 0 20px;
+}
+section #galeria img{
+    margin-left: 2px;
+    margin-top: 3px;
+   
+}
+
+section#galeria img:hover{
+
+    transform: scale(2.0);
+    border: 1px solid #CE6F83;
+}
+
+/*-----------------------*/
+.conf-artigo{
+    float: left;    
+    width: 310px;
+    margin:15px 0 0 25px;
+}
+
+h3{
+    color: #227115; 
+    font-size:1.0em;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+h4{
+    color:#86521a;
+    text-transform: uppercase;
+    padding-bottom: 3px;
+    margin-bottom: 30px;
+
+}
+
+/* ------------------------------------- */
+
+footer{
+    clear:both;
+    padding: 20px 0px 30px 0px;
+    text-align: center;
+    background: url(../img/fundo-rodape.png) no-repeat;
+    background-position:top;
+}
+footer p a{
+    color:#af670a
+
+}
+footer>p a{
+    padding: 2px;
+}   
+
+
+/* ------------------------------------- */
+/* ---------- PÁGINA  SOBRE --------- */
+
+div#sobre-pag2{/* DIV pagina Sobre */
+
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin-top: 20px;
+
+}
+
+div#sobre-pag2 h3{
+    font-size: 12pt;
+    text-align: center;
+
+}
+
+div#sobre-pag2 p{
+    padding: 10px;
+    font-size: 14px;
+    text-align: justify;
+  /*   background-image: linear-gradient( to left,#ee9ca7,#ffdde1);
+    border-radius: 100px ; */
+}
+
+.centralizado{
+    margin: 0 auto;
+    list-style: none;
+    color:#af670a;
+}
+
+img {
+    width: 100%;/* a imagem vai ficar tamanho da div */
+    height: 320px;
+}
+
+
+/* ------------------------------------- */
+/* ---------- PÁGINA  GALERIA  --------- */
+#galeriaTitulo h3{
+    font-size: 12pt;
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+
+.galeria {
+    /* border: 1px solid red; */  
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1080px; 
+    margin: 0 auto; 
+}
+
+.galeria  img{
+    width: 200px;
+    height: 150px;
+    opacity: 0.7;
+    cursor: pointer;
+ }
+ .galeria img:hover{
+    opacity: 1;  
+ }
+
+ .apresentacao{
+    top:5px;
+    margin: auto;
+    position: relative;
+    display: none;/*nao aparecer na tela*/
+    min-width:320px; 
+    max-width: 500px;
+    /* width: 30%; */
+
+ }
+
+ .apresentacao img{
+    width: 100%;
+ }
+
+.btFechar{
+    position: absolute; 
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 40px;
+    cursor: pointer;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------------------------- */
+/* RESPONSIVIDADE */
+/* Para telas com o máximo de 480px de largura */
+
+@media only screen and (max-width:480px) {
+ 
+    #container{
+      margin: 0 auto;
+    }
+    header nav ul {
+        display: flex;
+        flex-direction: column;  
+        padding: 5px;
+     } 
+     header nav ul li{
+
+        display: flex;
+        flex-direction: column;
+     } 
+     header nav ul li a{
+        text-align: center;
+        margin: 5px;
+     }   
+     
+     .galeria img{
+        /* border: 1px solid red; */  
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 auto; 
+        opacity: 1;
+    }
+  
+
+  
+
+}
